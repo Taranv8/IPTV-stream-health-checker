@@ -1,0 +1,17 @@
+{
+  "name": "iptv-stream-health-checker",
+  "version": "1.0.0",
+  "description": "Continuously checks HLS/m3u8 stream URLs in a MongoDB collection, scores them out of 100, reorders streamUrls by quality, and enriches each entry with technical metadata (resolution, bandwidth, codecs, audio tracks, DRM info).",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
+    "mongodb": "^6.8.0"
+  }
+}
